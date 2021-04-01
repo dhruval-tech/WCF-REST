@@ -8,7 +8,7 @@ namespace EBanking.Data
 {
     public interface IBankingRepo
     {
-         IEnumerable<Users> GetAllUsers();
-         Users GetUserById(int id);
+         IEnumerable<Accounts> GetAllAccounts();
+         Accounts GetAccountById(int id);
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EBanking.Models
 {
-    public class Users
+    public class Accounts
     { 
         public int Id { get; set; }
         public string FirstName { get; set; }

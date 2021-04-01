@@ -8,20 +8,20 @@ namespace EBanking.Data
 {
     public class MockBankingRepo : IBankingRepo
     {
-        public IEnumerable<Users> GetAllUsers()
+        public IEnumerable<Accounts> GetAllAccounts()
         {
-            var users = new List<Users> {
-                 new Users { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
-                 new Users { Id = 1, FirstName = "ruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
-                 new Users { Id = 2, FirstName = "val", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+            var users = new List<Accounts> {
+                 new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+                 new Accounts { Id = 1, FirstName = "ruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+                 new Accounts { Id = 2, FirstName = "val", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
 
             };
             return users;
         }
 
-        public Users GetUserById(int id)
+        public Accounts GetAccountById(int id)
         {
-            return new Users { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, };
+            return new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, };
         }
 
     }

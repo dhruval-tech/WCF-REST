@@ -10,24 +10,30 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EBanking.Controllers
 {
-    [Route("api/users")]
+    [Route("api/accounts")]
     [ApiController]
     public class HomeController : ControllerBase
     {
-        private readonly MockBankingRepo _repository = new MockBankingRepo();
+        private readonly IBankingRepo _repository;
+
+        public  HomeController(IBankingRepo repository)
+        {
+            _repository = repository;
+        }
+        //private readonly MockBankingRepo _repository = new MockBankingRepo();
         // GET: api/<HomeController>
         [HttpGet]
-        public ActionResult <IEnumerable<Users>> GetAllUsers()
+        public ActionResult <IEnumerable<Accounts>> GetAllUsers()
         {
-            var userItems = _repository.GetAllUsers();
+            var userItems = _repository.GetAllAccounts();
             return Ok(userItems);
         }
-
+         
         // GET api/<HomeController>/5
         [HttpGet("{id}")]
-        public ActionResult <Users> GetUserById(int id)
+        public ActionResult <Accounts> GetUserById(int id)
         {
-            var userItem = _repository.GetUserById(id);
+            var userItem = _repository.GetAccountById(id);
             return Ok(userItem);
         }
 
