@@ -17,7 +17,6 @@ D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\staticwebassets\EBanking.Stati
 D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.dll
 D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.pdb
 D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.genruntimeconfig.cache
-D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.csprojAssemblyReference.cache
 D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -61,3 +60,4 @@ D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Micros
 D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\sem6\SOA\REST\EBanking\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.csproj.CopyComplete
+D:\sem6\SOA\REST\EBanking\obj\Debug\netcoreapp3.1\EBanking.csprojAssemblyReference.cache

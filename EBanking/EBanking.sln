@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBanking", "EBanking.csproj", "{19FC8E7E-F072-4C81-A110-0BFB6E197B6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBanking", "EBanking.csproj", "{19FC8E7E-F072-4C81-A110-0BFB6E197B6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBankingAPIClient", "..\EBankingAPIClient\EBankingAPIClient.csproj", "{AFD32D12-93B2-48A0-B5EF-331204F0AC45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{19FC8E7E-F072-4C81-A110-0BFB6E197B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19FC8E7E-F072-4C81-A110-0BFB6E197B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19FC8E7E-F072-4C81-A110-0BFB6E197B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD32D12-93B2-48A0-B5EF-331204F0AC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD32D12-93B2-48A0-B5EF-331204F0AC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD32D12-93B2-48A0-B5EF-331204F0AC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD32D12-93B2-48A0-B5EF-331204F0AC45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

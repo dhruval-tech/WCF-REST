@@ -8,21 +8,44 @@ namespace EBanking.Data
 {
     public class MockBankingRepo : IBankingRepo
     {
-        public IEnumerable<Accounts> GetAllAccounts()
-        {
-            var users = new List<Accounts> {
-                 new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
-                 new Accounts { Id = 1, FirstName = "ruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
-                 new Accounts { Id = 2, FirstName = "val", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+        //public IEnumerable<Accounts> GetAllAccounts()
+        //{
+        //    var users = new List<Accounts> {
+        //         new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+        //         new Accounts { Id = 1, FirstName = "ruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
+        //         new Accounts { Id = 2, FirstName = "val", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, },
 
-            };
-            return users;
+        //    };
+        //    return users;
+        //}
+
+        //public Accounts GetAccountById(int id)
+        //{
+        //    return new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, };
+        //}
+        public void addAccount(Accounts accounts)
+        {
+            throw new NotImplementedException();
         }
 
-        public Accounts GetAccountById(int id)
+        public bool deleteAccount(int id)
         {
-            return new Accounts { Id = 0, FirstName = "Dhruval", LastName = "Gandhi", Address = "B102", Email = "abc@gmail.com", Password = "Abc@123", Balance = 200000, Contact = 123456789, };
+            throw new NotImplementedException();
         }
 
+        public Accounts getAccount(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Accounts> getAllAccounts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void updateAccount(Accounts accounts)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

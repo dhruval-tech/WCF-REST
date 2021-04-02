@@ -20,39 +20,67 @@ namespace EBanking.Controllers
         {
             _repository = repository;
         }
-        //private readonly MockBankingRepo _repository = new MockBankingRepo();
-        // GET: api/<HomeController>
+   
         [HttpGet]
-        public ActionResult <IEnumerable<Accounts>> GetAllUsers()
+        public ActionResult <IEnumerable<Accounts>> getAllAccounts()
         {
-            var userItems = _repository.GetAllAccounts();
+            var userItems = _repository.getAllAccounts();
             return Ok(userItems);
         }
          
-        // GET api/<HomeController>/5
         [HttpGet("{id}")]
-        public ActionResult <Accounts> GetUserById(int id)
+        public ActionResult <Accounts> getAccount(int id)
         {
-            var userItem = _repository.GetAccountById(id);
+            var userItem = _repository.getAccount(id);
             return Ok(userItem);
         }
 
-        // POST api/<HomeController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+        [HttpPost]
+        public ActionResult addAccount(Accounts accounts)
+        {
+            Accounts temp = new Accounts();
+            temp.FirstName = accounts.FirstName;
+            temp.LastName = accounts.LastName;
+            temp.Address = accounts.Address;
+            temp.Email = accounts.Email;
+            temp.Balance = accounts.Balance;
+            temp.Contact = accounts.Contact;
+            _repository.addAccount(temp);
+            return Ok();
+        }
 
-        // PUT api/<HomeController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
+        [HttpDelete("{id}")]
 
-        // DELETE api/<HomeController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        public ActionResult deleteAccount(int id)
+        {
+            var temp = _repository.deleteAccount(id);
+            if (temp == false)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok();
+            }
+
+
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult updateAccount(int id, Accounts accounts)
+        {
+            Accounts temp = _repository.getAccount(id);
+            temp.FirstName = accounts.FirstName;
+            temp.LastName = accounts.LastName;
+            temp.Address = accounts.Address;
+            temp.Email = accounts.Email;
+            temp.Balance = accounts.Balance;
+            temp.Contact = accounts.Contact;
+            _repository.updateAccount(temp);
+
+            return Ok();
+        }
+
+
     }
 }
